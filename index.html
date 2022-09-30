@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inlämning Kunduppgift</title>
+</head>
+
+<body>
+    <!--Jag har min blid i main classen så den täcker både första och andra sidan-->
+    <div class="main">
+        <!--Här börjar min form som innehåller inloggnings button samt login formuläret-->
+        <div class="form-content">
+            <div class="redigera">
+                <form >
+                    <div>
+                        <br>
+                        <p><b>Användarnamn:</b></p>
+                        <input type="text" placeholder="Användarnamn" id="username" class="input" size="25">
+                    </div>
+                    <div>
+                        <br>
+                        <p><b>Lösenord:</b></p>
+                        <input type="password" placeholder="Lösenord" id="password" class="input" size="25">
+                    </div>
+                    <div> 
+                        <br>
+                        <button id="knapp">Logga in</button>
+                    </div>
+                    <div class="error" id="error"></div>
+                </form>
+            </div>
+        </div>
+        <!--Andra sidan, denna sidan dyker upp när man har loggat in. Här finns det text samt en logga ut button-->
+        <div class="second_content">
+            <br>
+            <h1>Du är inloggad</h1>
+            <br>
+            <h2>
+                What is Lorem Ipsum?
+            </h2>
+            <br>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <div>
+            <br>
+            <button id="loggaut" class="loggaut" >Logga ut</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
